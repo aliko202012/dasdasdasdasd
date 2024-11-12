@@ -17,6 +17,6 @@ class BookAPI(GenericViewSet,
               mixins.ListModelMixin,
               mixins.RetrieveModelMixin,
               mixins.UpdateModelMixin):
-    queryset = Book.objects.all()
+    queryset = Book.objects.all().order_by('id')
     serializer_class = BookSerializers
     pagination_class = Pagination
