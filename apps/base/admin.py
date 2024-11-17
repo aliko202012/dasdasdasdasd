@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Book
+from .models import Recipe
 # Register your models here.
-@admin.register(Book)
-class BookAdmin(admin.ModelAdmin):
-    list_display = ['id','title','author','created_at','pages','logo']
-    search_fields = ['id','title']
-    list_filter = ['id','title']
+@admin.register(Recipe)
+class RecipeAdmin(admin.ModelAdmin):
+    list_display = ['id','name','ingredients','instructions','prep_time','is_vegetarian','created_at']
+    search_fields = ['id','name']
+    list_filter = ['id','name']

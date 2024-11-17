@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Book
+from .models import Recipe
 
-class BookSerializers(serializers.ModelSerializer):
+class RecipeSerializers(serializers.ModelSerializer):
     class Meta:
-        model = Book
-        fields = '__all__'
+     model = Recipe
+     fields = '__all__' 
