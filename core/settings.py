@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     #apps
     'apps.base',
 
-
     #rest 
     'rest_framework',
 
